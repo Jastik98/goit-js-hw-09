@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -82,7 +85,7 @@ function createElement(params) {
 }
 createElement(images);
 
-let gallery = new SimpleLightbox('.gallery-image');
-gallery.on('show.simplelightbox', function (event) {
-  event.preventDefault();
+new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
 });
