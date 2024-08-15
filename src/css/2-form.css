@@ -26,6 +26,14 @@ label {
   flex-direction: column;
   gap: 8px;
 }
+input:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+input:active,
+input:focus {
+  outline: none;
+}
 input {
   border: 1px solid #808080;
   border-radius: 4px;
@@ -34,12 +42,21 @@ input {
   padding-left: 16px;
 }
 textarea {
+  padding-top: 8px;
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
   height: 80px;
   padding-left: 16px;
   resize: none;
+}
+textarea:hover {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+textarea:active,
+textarea:focus {
+  outline: none;
 }
 button {
   margin-top: 8px;
@@ -50,7 +67,7 @@ button {
   gap: 10px;
   border-radius: 8px;
   padding: 8px 16px;
-  width: 86px;
+  width: 95px;
   height: 40px;
   background: #4e75ff;
   color: #fff;
@@ -63,4 +80,7 @@ button,
 button:active,
 button:focus {
   border: none;
+}
+button:hover {
+  background: #6c8cff;
 }
